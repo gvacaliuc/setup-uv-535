@@ -1,0 +1,9 @@
+name: default
+on:
+  push:
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v6.6.0
